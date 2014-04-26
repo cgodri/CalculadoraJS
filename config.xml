@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.dexloper.calculadoraJS"
+    version   = "1.0.0">
+    
+    <name>Calculadora JS</name>
+    <description>
+        Calculadora desenvolvida para tutorial de primeiros passos em Phonegap.
+    </description>
+    <author email="carlos.godri@dexloper.com" href="http://www.dexloper.com">
+        julianotheiss
+    </author>
+    
+    <gap:platform name="android" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="permissions" value="none"/>
+    <preference name="exit-on-suspend" value="true" /> 
+    <preference name="target-device" value="handset" /> 
+    <preference name="webviewbounce" value="true"/>
+    <access origin="*"/>
+    
+    <gap:splash src="splash/android/splash.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icon.png" />
+    
+    
+</widget>

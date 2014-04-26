@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<script src="js/calc.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+<title>EXEMPLO CALCULADORA PHONEGAP</title>
+</head>
+
+<body>
+
+<div id="div_visor"><center><input type="text" id="visor" disabled="disabled" placeholder="0.00"/></center></div>
+
+<table id="table_calculadora" border="0">
+
+<tr>
+<td><button id="sete" value="7">7</button></td>
+<td><button id="oito" value="8">8</button></td>
+<td><button id="nove" value="9">9</button></td>
+<td><button id="operador_multiplicar" value="*">X</button></td>
+<td><button id="operador_divisao" value="/">/</button></td>
+<td><button id="parentese_left" value="(">(</button></td>
+<td><button id="parentese_right" value=")">)</button></td>
+</tr>
+
+<tr>
+<td><button id="quatro" value="4">4</button></td>
+<td><button id="cinco" value="5">5</button></td>
+<td><button id="seis" value="6">6</button></td>
+<td><button id="operador_diminuir" value="-">-</button></td>
+<td><button id="raiz_quadrada" value="rootSquare">&#x221A;</button></td>
+</tr>
+
+<tr>
+<td><button id="um" value="1">1</button></td>
+<td><button id="dois" value="2">2</button></td>
+<td><button id="tres" value="3">3</button></td>
+<td><button id="operador_mais" value="+">+</button></td>
+<td><button id="porcentagem">%</button></td>
+</tr>
+
+<tr>
+<td><button id="zero" value="0">0</button></td>
+<td><button id="ponto" value=".">.</button></td>
+<td><button id="igual">=</button></td>
+<td><button id="limpar" title="Limpar campo"></button></td>
+<td><button id="pi" title="Constante PI">&#x3C0;</button></td>
+</tr>
+
+
+
+</table>
+
+<div id="relatorios_operandos">
+<b id="b_resultados"></b>
+</div>
+
+</body>
+
+</html>
