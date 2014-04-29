@@ -9,6 +9,8 @@
 		<!-- jQuery / jQueryMobile Scripts -->
 		<script src="js/jquery.js"></script>
 	    <script src="js/jquery.mobile.js"></script>
+	    <!-- Script para funções aritimeticas da calculadora -->
+	    <script src="js/calculadora.js"></script>
 	</head>	
 	<body>
 		<div data-role="page" data-theme="c">
@@ -16,38 +18,72 @@
 				<center><h1>Calculadora JS</h1></center>
 			</div>
 			<div data-role="content">
-			<center>
-				<form name="Calc">
-				<div data-role="fieldcontain" class="ui-hide-label">
-					<input type="text" value="" name="Input" placeholder="Resultado" id="resultado" data-inline="true">
-				</div>
-					<br />
-				<p>	
-					<input  type="button" value="1" id="1" data-inline="true" onClick="Calc.Input.value += '1'">
-					<input  type="button" value="2" id="2" data-inline="true" onClick="Calc.Input.value += '2'">
-					<input  type="button" value="3" id="3" data-inline="true" onClick="Calc.Input.value += '3'">
-					<input  type="button" value="+" id="+" data-inline="true" data-theme="b" onClick="Calc.Input.value += '+'">
-				</p>	
-				<p>	
-					<input  type="button" value="4" id="4" data-inline="true" onClick="Calc.Input.value += '4'">
-					<input  type="button" value="5" id="5" data-inline="true" onClick="Calc.Input.value += '5'">
-					<input  type="button" value="6" id="6" data-inline="true" onClick="Calc.Input.value += '6'">
-					<input  type="button" value="-" id="-" data-inline="true" data-theme="b" onClick="Calc.Input.value += '-'">
-				</p>	
-				<p>		
-					<input  type="button" value="7" id="7" data-inline="true" onClick="Calc.Input.value += '7'">
-					<input  type="button" value="8" id="8" data-inline="true" onClick="Calc.Input.value += '8'">
-					<input  type="button" value="9" id="9" data-inline="true" onClick="Calc.Input.value += '9'">
-					<input  type="button" value="*" id="*" data-inline="true" data-theme="b" onClick="Calc.Input.value += '*'">
-			    </p>
-				<p>	
-					<input  type="button" value="0" id="0" data-inline="true" onClick="Calc.Input.value += '0'">
-					<input  type="button" value="=" id="=" data-inline="true" data-theme="b" onClick="Calc.Input.value = eval(Calc.Input.value)">
-					<input  type="reset" value="C" id="C" data-inline="true" data-theme="e">
-					<input  type="button" value="/" id="/" data-inline="true" data-theme="b" onClick="Calc.Input.value += '/'">
-				</form>	
-				</p>
-			</center>
+					<div data-role="fieldcontain">
+				        <label for="display" ></label>
+				        <input type="text" name="display" id="display">
+	    			</div>
+				    <fieldset class="ui-grid-c">
+				        <div class="ui-block-a">
+				            <button type="button">1</button>
+				        </div>
+				        <div class="ui-block-b">
+				            <button type="button">2</button>
+				        </div>
+				        <div class="ui-block-c">
+				            <button type="button">3</button>
+				        </div>
+				        <div class="ui-block-d">
+				            <button type="button" data-theme="b">+</button>
+				        </div>
+				        <div class="ui-block-a">
+				            <button type="button">4</button>
+				        </div>
+				        <div class="ui-block-b">
+				            <button type="button">5</button>
+				        </div>
+				        <div class="ui-block-c">
+				            <button type="button">6</button>
+				        </div>
+				        <div class="ui-block-d">
+				            <button type="button" data-theme="b">-</button>
+				        </div>
+				        <div class="ui-block-a">
+				            <button type="button">7</button>
+				        </div>
+				        <div class="ui-block-b">
+				            <button type="button">8</button>
+				        </div>
+				        <div class="ui-block-c">
+				            <button type="button">9</button>
+				        </div>
+				        <div class="ui-block-d">
+				            <button type="button" data-theme="b">*</button>
+				        </div>
+				        <div class="ui-block-a">
+				            <button type="button">(</button>
+				        </div>
+				        <div class="ui-block-b">
+				            <button type="button">0</button>
+				        </div>
+				        <div class="ui-block-c">
+				            <button type="button">)</button>
+				        </div>
+				        <div class="ui-block-d">
+				            <button type="button" data-theme="b">/</button>
+				        </div>
+				        <div class="ui-block-a">
+				            <button type="button" data-theme="e">C</button>
+				        </div>
+				        <div class="ui-block-b">
+				            <button type="button">.</button>
+				        </div>
+				        <div class="ui-block-c">
+				            <button type="button" data-theme="e">&#x21D0;</button>
+				        </div>
+				        <div class="ui-block-d">
+				            <button type="button" data-theme="a">=</button>
+				        </div>
+				    </fieldset>
 			</div>	
 		</div>	
 	</body>	
