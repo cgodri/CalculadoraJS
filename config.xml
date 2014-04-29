@@ -9,7 +9,7 @@
         Calculadora desenvolvida para tutorial de primeiros passos em Phonegap.
     </description>
     <author email="carlos.godri@dexloper.com" href="http://www.dexloper.com">
-        julianotheiss
+        Carlos Godri
     </author>
     
     <gap:platform name="android" />
@@ -20,7 +20,6 @@
     <preference name="exit-on-suspend" value="true" /> 
     <preference name="target-device" value="handset" /> 
     <preference name="webviewbounce" value="true"/>
-    <access origin="*"/>
     
     <gap:splash src="splash/android/splash.png" gap:platform="android" gap:density="hdpi" />
     <icon src="icon.png" />

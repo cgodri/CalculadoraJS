@@ -1,59 +1,50 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-<script src="js/calc.js"></script>
-<link rel="stylesheet" href="css/style.css" type="text/css"/>
-<title>EXEMPLO CALCULADORA PHONEGAP</title>
-</head>
+<html>
+	<head>
+		<title>Calculadora JS</title>
+		<meta charset="UTF-8">
+		<meta name"viewport" content="width=device-width, initial-scala=1, maximum-scala=1">
+		<!-- CSS do Jquery Mobile -->
+		<link rel="stylesheet" href="css/jquery.mobile.css" />
 
-<body>
-
-<div id="div_visor"><center><input type="text" id="visor" disabled="disabled" placeholder="0.00"/></center></div>
-
-<table id="table_calculadora" border="0">
-
-<tr>
-<td><button id="sete" value="7">7</button></td>
-<td><button id="oito" value="8">8</button></td>
-<td><button id="nove" value="9">9</button></td>
-<td><button id="operador_multiplicar" value="*">X</button></td>
-<td><button id="operador_divisao" value="/">/</button></td>
-<td><button id="parentese_left" value="(">(</button></td>
-<td><button id="parentese_right" value=")">)</button></td>
-</tr>
-
-<tr>
-<td><button id="quatro" value="4">4</button></td>
-<td><button id="cinco" value="5">5</button></td>
-<td><button id="seis" value="6">6</button></td>
-<td><button id="operador_diminuir" value="-">-</button></td>
-<td><button id="raiz_quadrada" value="rootSquare">&#x221A;</button></td>
-</tr>
-
-<tr>
-<td><button id="um" value="1">1</button></td>
-<td><button id="dois" value="2">2</button></td>
-<td><button id="tres" value="3">3</button></td>
-<td><button id="operador_mais" value="+">+</button></td>
-<td><button id="porcentagem">%</button></td>
-</tr>
-
-<tr>
-<td><button id="zero" value="0">0</button></td>
-<td><button id="ponto" value=".">.</button></td>
-<td><button id="igual">=</button></td>
-<td><button id="limpar" title="Limpar campo"></button></td>
-<td><button id="pi" title="Constante PI">&#x3C0;</button></td>
-</tr>
-
-
-
-</table>
-
-<div id="relatorios_operandos">
-<b id="b_resultados"></b>
-</div>
-
-</body>
-
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="js/jquery.js"></script>
+	    <script src="js/jquery.mobile.js"></script>
+	</head>	
+	<body>
+		<div data-role="page" data-theme="c">
+			<div data-role="header" data-position="fixed" data-tap-toggle="false" data-id="vs_header">
+				<center><h1>Calculadora JS</h1></center>
+			</div>
+			<div data-role="content">
+				<form name="Calc">
+				<input type="text" value="" name="Input" placeholder="Resultado" id="resultado" style="height:35px;">
+					<br />
+				<p>	
+					<input class="btn" type="button" value="1" id="1" data-inline="true" onClick="Calc.Input.value += '1'">
+					<input class="btn" type="button" value="2" id="2" data-inline="true" onClick="Calc.Input.value += '2'">
+					<input class="btn" type="button" value="3" id="3" data-inline="true" onClick="Calc.Input.value += '3'">
+					<input class="btn" type="button" value="+" id="+" data-inline="true" data-theme="b" onClick="Calc.Input.value += '+'">
+				</p>	
+				<p>	
+					<input class="btn" type="button" value="4" id="4" data-inline="true" onClick="Calc.Input.value += '4'">
+					<input class="btn" type="button" value="5" id="5" data-inline="true" onClick="Calc.Input.value += '5'">
+					<input class="btn" type="button" value="6" id="6" data-inline="true" onClick="Calc.Input.value += '6'">
+					<input class="btn" type="button" value="-" id="-" data-inline="true" data-theme="b" onClick="Calc.Input.value += '-'">
+				</p>	
+				<p>		
+					<input class="btn" type="button" value="7" id="7" data-inline="true" onClick="Calc.Input.value += '7'">
+					<input class="btn" type="button" value="8" id="8" data-inline="true" onClick="Calc.Input.value += '8'">
+					<input class="btn" type="button" value="9" id="9" data-inline="true" onClick="Calc.Input.value += '9'">
+					<input class="btn" type="button" value="*" id="*" data-inline="true" data-theme="b" onClick="Calc.Input.value += '*'">
+			    </p>
+				<p>	
+					<input class="btn" type="button" value="0" id="0" data-inline="true" onClick="Calc.Input.value += '0'">
+					<input class="btn" type="button" value="=" id="=" data-inline="true" data-theme="b" onClick="Calc.Input.value = eval(Calc.Input.value)">
+					<input class="btn" type="reset" value="C" id="C" data-inline="true" data-theme="e">
+					<input class="btn" type="button" value="/" id="/" data-inline="true" data-theme="b" onClick="Calc.Input.value += '/'">
+				</form>	
+				</p>
+			</div>	
+		</div>	
+	</body>	
 </html>
